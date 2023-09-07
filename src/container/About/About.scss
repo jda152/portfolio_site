@@ -1,0 +1,148 @@
+.app__about-container{
+  margin: 0 auto;
+  // max-width: 107rem;
+  padding: 0 4rem;
+  height: auto;
+  background: white;
+
+  @media (max-width: 600px) {
+    padding: 0 1rem;
+  }
+  
+}
+
+.app__about-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 2rem;
+    flex-direction: column;
+    margin: 1rem auto;
+    
+    h2{
+      @media (max-width:600px) {
+        padding-bottom: .5rem;
+        border-bottom: 2px solid rgba(45,46,50,.5);      }
+    }
+
+    @media (max-width: 1020px) {
+      position: initial;
+      flex-direction: column;
+    }
+
+    
+    @media (max-width: 600px) {
+     
+      flex-direction: column; /* Change flex direction to row */
+    
+    }
+    
+  }
+  
+  .app__about-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    ul {
+      list-style: none;
+      gap: .5rem;
+      display: flex;
+      justify-content: center;
+  
+      @media (max-width: 600px) {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+    }
+  
+    li {
+      width: auto;       
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin: 1rem; /* Add some spacing between items */
+      position: relative; /* Move this line outside of the & selector */
+  
+      &:hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: var(--secondary-color); /* Adjust the color as needed */
+      }
+  
+      @media (max-width: 600px) {
+        width: 2rem;  
+        height: 3rem;
+      }
+    }
+    
+    img {
+      width: 3rem;
+      height: 3rem;
+  
+      @media (max-width: 600px) {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  
+  
+
+  .app__about-bio {
+    text-align: center;
+    padding: 2rem;
+  
+    img {
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 100%; /* Adjust the width to fill the container */
+        max-width: 500px; /* Set a maximum width for the image */
+        padding: 0; /* Adjust padding as needed */
+        border: 3px solid black;
+        border-radius: 16px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
+      }
+    
+
+    h2{
+        margin: 1rem 0;
+        color: var(--secondary-color);
+    }
+
+    h3{
+        margin: .4rem 0;
+        font-size: 1.1rem;
+    }
+
+    p{
+    font-size: 1.2rem; 
+    line-height: 1.4;
+    text-align: center; 
+    width: 100%;
+    display: inline-block;
+    padding: .5rem 12rem; 
+    box-sizing: border-box; 
+      
+  
+
+      @media (max-width:1000px){
+        padding: .5rem 4rem;
+      }  
+
+      @media (max-width: 600px) {
+        font-size: 1rem;
+        padding: 0 .5rem; 
+      }
+
+    }
+    
+  }
+  

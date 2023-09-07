@@ -1,0 +1,218 @@
+#home{
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+
+    .app__wrapper{
+        padding:0;
+        
+        .copyright{
+            display: none;
+        }
+    }
+
+    
+}
+
+.app__header{
+   flex: 1;
+   max-width: 100rem;
+   margin: 0 auto;
+   padding: 4rem 4rem 10rem ;
+  //  width: 100%;
+  //  height: 100%;
+   flex-direction: row;
+   z-index: 1;
+
+   
+  //  padding: 6rem 2rem 0;
+
+   @media screen and (min-width: 2000px) {
+        padding-top: 8rem;
+    }
+
+   @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 3rem 1rem 2rem;
+   }
+}
+
+.app__header-info{
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 107rem ;
+
+    // @media screen and (min-width: 2000px){
+    //     width: 100%;
+    //     margin-right: 0rem;
+    // }
+    @media (max-width: 900px) {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        gap: 3rem;
+      }
+}
+
+.app__header-badge{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+    gap: 6rem;
+    height: auto;
+ 
+      @media (max-width: 900px) {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: auto;
+        gap: 1rem;
+      }
+    
+      @media (min-width: 1600px) {
+        margin-top: 6rem;
+      }
+    
+      @media (min-width: 1900px) {
+        margin-top: 10rem;
+      }
+     
+}
+
+.badge-cmp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  h1 {
+    font-size: 2rem;
+    padding: 0 2rem;
+    
+    @media (min-width:1000px){
+      white-space: nowrap;  
+    }
+    
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    max-width: 30rem; /* Limit the maximum width of the paragraph */
+    // text-align: center; /* Center-align text on all screen sizes */
+    padding: 1rem 2rem; /* Add padding to the top and bottom for spacing */
+
+    @media (max-width: 600px) {
+      padding: 1rem; /* Adjust padding for smaller screens */
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 25rem; /* Adjust max-width for medium-sized screens */
+      padding: 1rem 2.5rem;
+    }
+  }
+}
+
+
+.badge__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 2rem;
+  align-items: flex-start; /* Align items to flex-start */
+
+  a {
+    
+    font-size: 2.5rem;
+    color: black;
+    margin-right: 2rem; /* Add margin to create space between logos */
+
+    @media (max-width: 600px) {
+      
+      font-size: 2rem;
+      margin-right: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    &:last-child {
+      margin-right: 0; /* Remove margin from the last logo */
+    }
+  }
+
+  @media (max-width: 950px) {
+    flex-direction: column; /* Change to column layout on smaller screens */
+
+    a {
+      margin-bottom: 1rem; /* Add margin between links on smaller screens */
+    }
+  }
+
+  /* Style the icons directly */
+  .icon-wrapper {
+    display: inline-block;
+    transition: all 0.2s;
+
+    i {
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
+
+
+.app__header-img{
+    width: 22rem;
+    height: 22rem;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 3px solid black;
+  
+    @media (max-width: 500px) {
+      width: 16rem;
+      height: 16rem;
+    
+    }
+  
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+  
+    @keyframes morph {
+      0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+  
+      50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+  
+      100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      }
+    }
+  }
