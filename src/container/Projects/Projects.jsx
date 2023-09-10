@@ -14,7 +14,7 @@ const Projects= forwardRef((props, ref) => {
             <div className='grid__prj1'>
             {/* the thumbnail of the grid that shows proj preview */}
               <div  className='grid__prj1__img'>
-                <a target='_blank' href='https://jdaportfolio.fun/'
+                <a target='_blank' href='https://chatgpt-front-end-project.vercel.app/'
                 rel='noreferrer'>
                 <img src={images.prj1} alt="website"/>
 
