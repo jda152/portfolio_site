@@ -40,7 +40,7 @@ const Projects= forwardRef((props, ref) => {
                   <a target="_blank" href="https://github.com/jda152/personal-projects" rel="noreferrer">Code <i class="fa-brands fa-github"></i>
            
                   </a>
-                  <a target="_blank" href="https://jdaportfolio.fun/" rel="noreferrer">
+                  <a target="_blank" href="https://chatgpt-front-end-project.vercel.app/" rel="noreferrer">
                     Live Demo
                     <i class="fa-solid fa-arrow-up-right-from-square link-icon">
 
